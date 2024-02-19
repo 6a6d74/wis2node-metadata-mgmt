@@ -1,7 +1,7 @@
 name: Generate and validate WCMP2 discovery metadata
 
 env:
-    WIS2_CENTRE_ID: ca-eccc-msc
+    WIS2_CENTRE_ID: eu-eumetnet-femdi
 
 on:
   pull_request:
