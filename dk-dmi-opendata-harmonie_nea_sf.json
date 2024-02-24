@@ -1,0 +1,120 @@
+{
+    "id": "urn:wmo:md:dk-dmi-opendata:harmonie_nea_sf",
+    "conformsTo": [
+        "http://wis.wmo.int/spec/wcmp/2/conf/core"
+    ],
+    "type": "Feature",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -28.62,
+                    44.38
+                ],
+                [
+                    -28.62,
+                    72.88
+                ],
+                [
+                    37.01,
+                    72.88
+                ],
+                [
+                    37.01,
+                    44.38
+                ],
+                [
+                    -28.62,
+                    44.38
+                ]
+            ]
+        ]
+    },
+    "properties": {
+        "identifier": "urn:wmo:md:dk-dmi-opendata:harmonie_nea_sf",
+        "title": "HARMONIE NEA (\"North Europe and Faroe Islands\") SF (\"surface area\") data",
+        "description": "HARMONIE weather forecast model data for North Europe and Faroe Islands. A single forecast calculated at a certain point in time is referred to as a model run and contains a given number of time steps. Parameters in land temperature, wind in several heights, sun radiation, pressure, humidity, cloud cover and much more. Data is provided on the forecast model's \"surfaces\" (e.g., soil temperature, 2 m temperature, 10 m wind). Surface data also include parameters that are integrated across laters through the entire atmosphere (e.g., precipitation and cloud cover).",
+        "themes": [
+            {
+                "concepts": [
+                    {
+                        "id": "weather"
+                    }
+                ],
+                "scheme": "https://codes.wmo.int/topic-hierarchy/earth-system-discipline"
+            }
+        ],
+        "language": "en",
+        "type": "dataset",
+        "created": "2023-04-13T00:00:00Z",
+        "rights": "Users are granted free and unrestricted access to this data, without charge and with no conditions on use. Users are requested to attribute the producer of this data. WMO Unified Data Policy (Resolution 1 (Cg-Ext 2021))",
+        "contacts": [
+            {
+                "addresses": [
+                    {
+                        "deliveryPoint": [
+                            "Lyngbyvej 100"
+                        ],
+                        "city": "Copenhagen",
+                        "administrativeArea": "Ryparken-Lundehus",
+                        "postalCode": "DK-2100",
+                        "country": "Denmark"
+                    }
+                ],
+                "roles": [
+                    "host"
+                ],
+                "organization": "Danish Meteorological Institute (DMI)",
+                "hoursOfService": "0800h - 1600h CEST/CET",
+                "phones": [
+                    {
+                        "value": "+4539157500"
+                    }
+                ],
+                "links": [
+                    {
+                        "rel": "canonical",
+                        "type": "text/html",
+                        "href": "https://www.dmi.dk/"
+                    }
+                ]
+            }
+        ],
+        "keywords": [
+            "forecast",
+            "pressure",
+            "cloud cover",
+            "wind",
+            "temperature",
+            "relative humidity",
+            "rain",
+            "geopotential",
+            "dew point temperature",
+            "visibility"
+        ],
+        "wmo:dataPolicy": "recommended"
+    },
+    "links": [
+        {
+            "href": "mqtts://username:password@host:port",
+            "type": "MQTT",
+            "rel": "related",
+            "title": "notifications",
+            "channel": "origin/a/wis2/dk-dmi-opendata/data/recommended/weather/prediction/forecast"
+        },
+        {
+            "href": "https://apisixdev.eumetnet-femdi.eumetsat.ewcloud.host/dk/edr/collections/harmonie_nea_sf",
+            "type": "OGCEDR",
+            "rel": "canonical",
+            "title": "OGC-API EDR"
+        }
+    ],
+    "time": {
+        "interval": [
+            "..",
+            ".."
+        ],
+        "resolution": "P1H"
+    }
+}
