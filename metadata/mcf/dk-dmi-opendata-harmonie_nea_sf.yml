@@ -60,6 +60,10 @@ identification:
         spatial:
             - bbox: [-28.62, 44.38, 37.01, 72.88]
               crs: 4326
+        temporal:
+            - begin: null
+              end: null
+              resolution: P1H
     url: https://opendatadocs.dmi.govcloud.dk/Data/Forecast_Data_Weather_Model_HARMONIE
     wmo_data_policy: recommended
     topicCategory: climatologyMeteorologyAtmosphere
@@ -76,7 +80,7 @@ distribution:
         function: download
     http:
         url: https://apisixdev.eumetnet-femdi.eumetsat.ewcloud.host/dk/edr/collections/harmonie_nea_sf
-        type: HTTP
+        type: OGCEDR
         rel: canonical
         name: OGC-API EDR
         description: OGC-API Environmental Data Retrieval (EDR) service for accessing HARMONIE data covering the surface area of North Europe and Faroe Islands, containing various parameters
