@@ -63,6 +63,10 @@ identification:
         spatial:
             - bbox: [-20, 49, 54, 75]
               crs: 4326
+        temporal:
+            - begin: null
+              end: null
+              resolution: P1H
     url: null
     wmo_data_policy: recommended
     topicCategory: climatologyMeteorologyAtmosphere
