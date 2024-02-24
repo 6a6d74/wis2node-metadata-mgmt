@@ -53,6 +53,10 @@ identification:
         spatial:
             - bbox: [14.17, 48.97, 24.63, 55.04]
               crs: 4326
+        temporal:
+            - begin: null
+              end: null
+              resolution: PT1H
     url: https://wis2-pilot.imgw.pl/oapi/collections/discovery-metadata/items/urn:x-wmo:md:pol.poland:surface-weather-observations
     wmo_data_policy: recommended
     topicCategory: climatologyMeteorologyAtmosphere
@@ -69,7 +73,7 @@ distribution:
         function: download
     http:
         url: https://apisixdev.eumetnet-femdi.eumetsat.ewcloud.host/pl/oapi/collections/urn:x-wmo:md:pol.poland:surface-weather-observations/
-        type: HTTP
+        type: OGCEDR
         rel: canonical
         name: OGC-API Features
         description: OGC-API Features service for accessing surface weather observations in Poland

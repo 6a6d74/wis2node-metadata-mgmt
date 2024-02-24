@@ -62,7 +62,7 @@ identification:
         temporal:
             - begin: null
               end: null
-              resolution: P1H
+              resolution: PT1H
     url: https://opendatadocs.dmi.govcloud.dk/Data/Forecast_Data_Weather_Model_HARMONIE
     wmo_data_policy: recommended
     topicCategory: climatologyMeteorologyAtmosphere
