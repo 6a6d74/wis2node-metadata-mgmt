@@ -1,0 +1,83 @@
+
+mcf:
+    version: 1.0
+
+metadata:
+    identifier: urn:wmo:md:dk-dmi-opendata:harmonie_nea_sf
+    hierarchylevel: dataset
+    language: en
+    charset: utf8
+    datestamp: 2024-02-23
+
+contact:
+    host:
+        organization: Danish Meteorological Institute (DMI)
+        url: https://www.dmi.dk/
+        phone: '+45 39157500'
+        fax: '+45 39271080'
+        address: Lyngbyvej 100
+        city: Copenhagen
+        administrativearea: Ryparken-Lundehus
+        postalcode: DK-2100
+        country: Denmark
+        email: null
+        hoursofservice: 0800h - 1600h CEST/CET
+        individualname: null
+        positionname: null
+
+spatial:
+    datatype: grid
+    geomtype: point
+
+identification:
+    title: HARMONIE NEA ("North Europe and Faroe Islands") SF ("surface area") data
+    abstract: HARMONIE weather forecast model data for North Europe and Faroe Islands. A single forecast calculated at a certain point in time is referred to as a model run and contains a given number of time steps. Parameters in land temperature, wind in several heights, sun radiation, pressure, humidity, cloud cover and much more. Data is provided on the forecast model's "surfaces" (e.g., soil temperature, 2 m temperature, 10 m wind). Surface data also include parameters that are integrated across laters through the entire atmosphere (e.g., precipitation and cloud cover).
+    rights: Users are granted free and unrestricted access to this data, without charge and with no conditions on use. Users are requested to attribute the producer of this data. WMO Unified Data Policy (Resolution 1 (Cg-Ext 2021))
+    status: onGoing
+    dates:
+        creation: 2023-04-13
+    keywords:
+        default:
+            keywords:
+                - forecast
+                - pressure
+                - cloud cover
+                - wind
+                - temperature
+                - relative humidity
+                - rain
+                - geopotential
+                - dew point temperature
+                - visibility
+        wmo:
+            keywords:
+                - weather
+            keywords_type: theme
+            vocabulary:
+                name: Earth system disciplines as defined by the WMO Unified Data Policy, Resolution 1 (Cg-Ext(2021), Annex 1.
+                url: https://codes.wmo.int/topic-hierarchy/earth-system-discipline
+    extents:
+        spatial:
+            - bbox: [-28.62, 44.38, 37.01, 72.88]
+              crs: 4326
+    url: https://opendatadocs.dmi.govcloud.dk/Data/Forecast_Data_Weather_Model_HARMONIE
+    wmo_data_policy: recommended
+    topicCategory: climatologyMeteorologyAtmosphere
+    maintenancefrequency: continual
+
+distribution:
+    mqtt:
+        url: mqtts://username:password@host:port
+        type: MQTT
+        rel: related
+        name: notifications
+        description: MQTT endpoint where a user can subcribe to receive notifications about new forecast weather data for Northern Europe and Faroe Islands 
+        channel: origin/a/wis2/dk-dmi-opendata/data/recommended/weather/prediction/forecast
+        function: download
+    http:
+        url: https://apisixdev.eumetnet-femdi.eumetsat.ewcloud.host/dk/edr/collections/harmonie_nea_sf
+        type: HTTP
+        rel: canonical
+        name: OGC-API EDR
+        description: OGC-API Environmental Data Retrieval (EDR) service for accessing HARMONIE data covering the surface area of North Europe and Faroe Islands, containing various parameters
+        function: download

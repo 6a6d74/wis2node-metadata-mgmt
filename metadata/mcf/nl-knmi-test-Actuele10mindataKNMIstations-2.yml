@@ -1,0 +1,96 @@
+
+mcf:
+    version: 1.0
+
+metadata:
+    identifier: urn:wmo:md:nl-knmi-test:Actuele10mindataKNMIstations-2
+    hierarchylevel: dataset
+    language: en
+    charset: utf8
+    datestamp: 2024-02-23
+
+contact:
+    host:
+        organization: Koninklijk Nederlands Meteorologisch Instituut (KNMI)
+        url: https://dataplatform.knmi.nl
+        phone: '+31 30 22 06 911'
+        fax: null
+        address: Utrechtseweg 297
+        city: De Bilt
+        administrativearea: null
+        postalcode: 3731 GA
+        country: Netherlands
+        email: opendata@knmi.nl
+        hoursofservice: 0800h - 1600h CEST/CET
+        individualname: null
+        positionname: KNMI Data Platform
+
+spatial:
+    datatype: vector
+    geomtype: point
+
+identification:
+    title: Meteo data - actual synoptic observations KNMI the Netherlands per 10 minutes
+    abstract: KNMI collects observations from the automatic weather stations situated in the Netherlands and BES islands on locations such as aerodromes and North Sea platforms. In addition, wind data from KNMI wind poles are included. The weather stations report every 10 minutes meteorological parameters such as temperature, relative humidity, wind, air pressure, visibility, precipitation, and cloud cover. The number of parameters differs per station. The file for the past 10 minutes is available a few minutes later and contains a timestamp denoting the end of the observation period in UTC. It is possible that a station's observations may not be immediately available. Files are updated with missing data up to 4 hours later.
+    rights: Users are granted free and unrestricted access to this data, without charge and with no conditions on use. Users are requested to attribute the producer of this data. WMO Unified Data Policy (Resolution 1 (Cg-Ext 2021))
+    status: onGoing
+    dates:
+        creation: 2023-01-01
+        revision: 2023-12-05
+    keywords:
+        default:
+            keywords:
+                - surface weather
+                - temperature
+                - observations
+        wmo-wis2:
+            keywords:
+                - weather
+            keywords_type: theme
+            vocabulary:
+                name: Earth system disciplines as defined by the WMO Unified Data Policy, Resolution 1 (Cg-Ext(2021), Annex 1.
+                url: https://codes.wmo.int/topic-hierarchy/earth-system-discipline
+        wmo-wis1:
+            keywords:
+                - meteorology
+            keywords_type: theme
+            keywords_codelist: http://wis.wmo.int/2012/codelists/WMOCodeLists#WMO_CategoryCode
+    extents:
+        spatial:
+            - bbox: [-68.5, 12, 7.4, 55.7]
+              crs: 4326
+    url: https://dataplatform.knmi.nl/dataset/actuele10mindataknmistations-2
+    wmo_data_policy: core
+    topicCategory: climatologyMeteorologyAtmosphere
+    maintenancefrequency: continual
+    license:
+        name: CC BY 4.0
+        url: https://creativecommons.org/licenses/by/4.0/
+
+distribution:
+    edr:
+        url: https://apisixdev.eumetnet-femdi.eumetsat.ewcloud.host/nl/edr/v1/collections/observations
+        type: HTTP
+        rel: canonical
+        name: OGC-API EDR
+        description: 10 minute synoptical observations data access API interface
+        function: download
+    files:
+        url: https://api.dataplatform.knmi.nl/open-data/v1/datasets/Actuele10mindataKNMIstations/versions/2/files
+        rel: items
+        name: Raw data files
+        description: Raw data download (Netcdf files)
+        function: download
+    station-metadata:
+        url: https://oscar.wmo.int/surface/rest/api/search/station/?&operatingStatus=Operational&territoryName=NLD&longitudeMin=-68.5&longitudeMax=7.4&latitudeMax=55.7&latitudeMin=12.0
+        type: HTTP
+        rel: http://def.wmo.int/def/rel/wmdr/-/FacilitySet
+        name: WMO OSCAR/Surface
+        description: Observing stations associated with this dataset
+        function: information
+    documentation:
+        url: https://developer.dataplatform.knmi.nl/edr-api#howto
+        rel: related
+        name: Documentation
+        description: Howto documentation for the EDR API service
+        function: information

@@ -1,0 +1,87 @@
+
+mcf:
+    version: 1.0
+
+metadata:
+    identifier: urn:wmo:md:no-metno-test:meps-det-vdiv
+    hierarchylevel: dataset
+    language: en
+    charset: utf8
+    datestamp: 2024-02-23
+
+contact:
+    host:
+        organization: Meteorologisk Institutt / Norwegian Meteorological Institute (MetNo)
+        url: https://www.met.no/en/free-meteorological-data
+        phone: '+47 22 96 30 00'
+        fax: null
+        address: Postboks 43
+        city: Oslo
+        administrativearea: Blindern
+        postalcode: '0313'
+        country: Norway
+        email: post@met.no
+        hoursofservice: 0800h - 1700h CEST/CET
+        individualname: null
+        positionname: null
+
+spatial:
+    datatype: vector
+    geomtype: point
+
+identification:
+    title: Model Data timeseries provider for meps-det-vdiv
+    abstract: Location-specific forecast data derived from deterministic MEPS 2.5 Km; build for Vdiv. 3-day forecast data at hourly intervals.
+    rights: Users are granted free and unrestricted access to this data, without charge and with no conditions on use. Users are requested to attribute the producer of this data. WMO Unified Data Policy (Resolution 1 (Cg-Ext 2021))
+    status: onGoing
+    dates:
+        creation: null
+    keywords:
+        default:
+            keywords:
+                - forecast
+                - Modeldata
+                - Timeseries
+                - position
+                - location
+                - instances
+                - Atmospheric model
+                - air_pressure_at_sea_level
+                - air_temperature_2m
+                - cloud_area_fraction
+                - precipitation_amount_acc
+                - wind_direction
+                - wind_speed
+        wmo:
+            keywords:
+                - weather
+            keywords_type: theme
+            vocabulary:
+                name: Earth system disciplines as defined by the WMO Unified Data Policy, Resolution 1 (Cg-Ext(2021), Annex 1.
+                url: https://codes.wmo.int/topic-hierarchy/earth-system-discipline
+    extents:
+        spatial:
+            - bbox: [-20, 49, 54, 75]
+              crs: 4326
+    url: null
+    wmo_data_policy: recommended
+    topicCategory: climatologyMeteorologyAtmosphere
+    maintenancefrequency: continual
+    license:
+        name: CC BY 4.0
+        url: https://creativecommons.org/licenses/by/4.0/
+
+distribution:
+    edr:
+        url: https://apisixdev.eumetnet-femdi.eumetsat.ewcloud.host/no/edr/collections/meps-det-vdiv/
+        type: HTTP
+        rel: canonical
+        name: OGC-API EDR
+        description: Global weather forecast model data (ECMWF IFS) provided via the OGC-API Environmental Data Retrieval (EDR) API
+        function: download
+    documentation:
+        url: https://interpol-b.met.no/api/
+        rel: related
+        name: OGC API - Environmental Data Retrieval
+        description: Documentation describing the OGC-API Environmental Data Retrieval (EDR) API provided by MetNo
+        function: information

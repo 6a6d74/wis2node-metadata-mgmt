@@ -1,0 +1,76 @@
+
+mcf:
+    version: 1.0
+
+metadata:
+    identifier: urn:wmo:md:pl-imgw-test:surface-weather-observations
+    hierarchylevel: dataset
+    language: en
+    charset: utf8
+    datestamp: 2024-02-23
+
+contact:
+    host:
+        organization: Institute of Metoerology and Water Management (IMGW-PIB)
+        url: https://imgw.pl
+        phone: '+48 22 56 94 101'
+        fax: null
+        address: Podlesna 61
+        city: Warsaw
+        administrativearea: Mazowieckie
+        postalcode: 01-673
+        country: Poland
+        email: wis@imgw.pl
+        hoursofservice: 0800h - 1600h CEST/CET
+        individualname: null
+        positionname: WIS2 administrators
+
+spatial:
+    datatype: vector
+    geomtype: point
+
+identification:
+    title: Surface weather observations from Poland
+    abstract: Surface weather observations from Poland; served through FEMDI API Gateway
+    rights: Users are granted free and unrestricted access to this data, without charge and with no conditions on use. Users are requested to attribute the producer of this data. WMO Unified Data Policy (Resolution 1 (Cg-Ext 2021))
+    status: onGoing
+    dates:
+        creation: 2023-04-13
+    keywords:
+        default:
+            keywords:
+                - surface weather
+                - temperature
+                - observations
+        wmo:
+            keywords:
+                - weather
+            keywords_type: theme
+            vocabulary:
+                name: Earth system disciplines as defined by the WMO Unified Data Policy, Resolution 1 (Cg-Ext(2021), Annex 1.
+                url: https://codes.wmo.int/topic-hierarchy/earth-system-discipline
+    extents:
+        spatial:
+            - bbox: [14.17, 48.97, 24.63, 55.04]
+              crs: 4326
+    url: https://wis2-pilot.imgw.pl/oapi/collections/discovery-metadata/items/urn:x-wmo:md:pol.poland:surface-weather-observations
+    wmo_data_policy: recommended
+    topicCategory: climatologyMeteorologyAtmosphere
+    maintenancefrequency: continual
+
+distribution:
+    mqtt:
+        url: mqtt://everyone:everyone@mosquitto:1883
+        type: MQTT
+        rel: related
+        name: notifications
+        description: MQTT endpoint where a user can subcribe to receive notifications about new surface weather observations in Poland
+        channel: origin/a/wis2/pl-imgw-test/data/core/weather/surface-weather-observations/synop
+        function: download
+    http:
+        url: https://apisixdev.eumetnet-femdi.eumetsat.ewcloud.host/pl/oapi/collections/urn:x-wmo:md:pol.poland:surface-weather-observations/
+        type: HTTP
+        rel: canonical
+        name: OGC-API Features
+        description: OGC-API Features service for accessing surface weather observations in Poland
+        function: download
