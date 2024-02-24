@@ -1,0 +1,135 @@
+{
+    "id": "urn:wmo:md:fi-fmi-test:ecmwf",
+    "conformsTo": [
+        "http://wis.wmo.int/spec/wcmp/2/conf/core"
+    ],
+    "type": "Feature",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ]
+            ]
+        ]
+    },
+    "properties": {
+        "identifier": "urn:wmo:md:fi-fmi-test:ecmwf",
+        "title": "Global weather forecast data from ECMWF IFS model",
+        "description": "Global weather forecast data from ECMWF IFS model. Point forecasts and lattice fields of a weather forecast model. Weather forecast model pressure surface data as lattice field. Latest 54 h forecast 2 times per day.",
+        "themes": [
+            {
+                "concepts": [
+                    {
+                        "id": "weather"
+                    }
+                ],
+                "scheme": "https://codes.wmo.int/topic-hierarchy/earth-system-discipline"
+            }
+        ],
+        "language": "en",
+        "type": "dataset",
+        "created": "None",
+        "rights": "Users are granted free and unrestricted access to this data, without charge and with no conditions on use. Users are requested to attribute the producer of this data. WMO Unified Data Policy (Resolution 1 (Cg-Ext 2021))",
+        "contacts": [
+            {
+                "addresses": [
+                    {
+                        "deliveryPoint": [
+                            "Dynamicum, Erik Palm\u00e9nin aukio 1"
+                        ],
+                        "city": "Helsinki",
+                        "administrativeArea": "Kumpula",
+                        "postalCode": "FI-00560",
+                        "country": "Finland"
+                    }
+                ],
+                "roles": [
+                    "host"
+                ],
+                "organization": "Ilmatieteen Laitos / Finnish Meteorological Institute (FMI)",
+                "hoursOfService": "0700h - 1600h CEST/CET",
+                "phones": [
+                    {
+                        "value": "+358295391000"
+                    }
+                ],
+                "emails": [
+                    {
+                        "value": "webmaster@fmi.fi"
+                    }
+                ],
+                "links": [
+                    {
+                        "rel": "canonical",
+                        "type": "text/html",
+                        "href": "https://en.ilmatieteenlaitos.fi/"
+                    }
+                ]
+            }
+        ],
+        "keywords": [
+            "forecast",
+            "geopheight",
+            "groundtemperature",
+            "humidity",
+            "precipitation1h",
+            "pressure",
+            "temperature",
+            "windums",
+            "windvms"
+        ],
+        "wmo:dataPolicy": "recommended"
+    },
+    "links": [
+        {
+            "href": "https://apisixdev.eumetnet-femdi.eumetsat.ewcloud.host/fi/edr/collections/ecmwf",
+            "type": "OGCEDR",
+            "rel": "canonical",
+            "title": "OGC-API EDR"
+        },
+        {
+            "href": "https://en.ilmatieteenlaitos.fi/open-data-manual",
+            "type": "https",
+            "rel": "related",
+            "title": "Open data manual"
+        },
+        {
+            "href": "https://en.ilmatieteenlaitos.fi/open-data-support-request",
+            "type": "https",
+            "rel": "related",
+            "title": "Open data support"
+        },
+        {
+            "href": "https://www.ecmwf.int/en/forecasts/datasets/open-data",
+            "type": "https",
+            "rel": "related",
+            "title": "About the ECMWF Weather Forecast Model"
+        }
+    ],
+    "time": {
+        "interval": [
+            "..",
+            ".."
+        ],
+        "resolution": "P1H"
+    }
+}
