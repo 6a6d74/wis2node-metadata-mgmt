@@ -1,0 +1,127 @@
+{
+    "id": "urn:wmo:md:no-metno-test:meps-det-vdiv",
+    "conformsTo": [
+        "http://wis.wmo.int/spec/wcmp/2/conf/core"
+    ],
+    "type": "Feature",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -20,
+                    49
+                ],
+                [
+                    -20,
+                    75
+                ],
+                [
+                    54,
+                    75
+                ],
+                [
+                    54,
+                    49
+                ],
+                [
+                    -20,
+                    49
+                ]
+            ]
+        ]
+    },
+    "properties": {
+        "identifier": "urn:wmo:md:no-metno-test:meps-det-vdiv",
+        "title": "Model Data timeseries provider for meps-det-vdiv",
+        "description": "Location-specific forecast data derived from deterministic MEPS 2.5 Km; build for Vdiv. 3-day forecast data at hourly intervals.",
+        "themes": [
+            {
+                "concepts": [
+                    {
+                        "id": "weather"
+                    }
+                ],
+                "scheme": "https://codes.wmo.int/topic-hierarchy/earth-system-discipline"
+            }
+        ],
+        "language": "en",
+        "type": "dataset",
+        "created": "2024-02-23T00:00:00Z",
+        "rights": "Users are granted free and unrestricted access to this data, without charge and with no conditions on use. Users are requested to attribute the producer of this data. WMO Unified Data Policy (Resolution 1 (Cg-Ext 2021))",
+        "contacts": [
+            {
+                "addresses": [
+                    {
+                        "deliveryPoint": [
+                            "Postboks 43"
+                        ],
+                        "city": "Oslo",
+                        "administrativeArea": "Blindern",
+                        "postalCode": "0313",
+                        "country": "Norway"
+                    }
+                ],
+                "roles": [
+                    "host"
+                ],
+                "organization": "Meteorologisk Institutt / Norwegian Meteorological Institute (MetNo)",
+                "hoursOfService": "0800h - 1700h CEST/CET",
+                "phones": [
+                    {
+                        "value": "+4722963000"
+                    }
+                ],
+                "emails": [
+                    {
+                        "value": "post@met.no"
+                    }
+                ],
+                "links": [
+                    {
+                        "rel": "canonical",
+                        "type": "text/html",
+                        "href": "https://www.met.no/en/free-meteorological-data"
+                    }
+                ]
+            }
+        ],
+        "keywords": [
+            "forecast",
+            "Modeldata",
+            "Timeseries",
+            "position",
+            "location",
+            "instances",
+            "Atmospheric model",
+            "air_pressure_at_sea_level",
+            "air_temperature_2m",
+            "cloud_area_fraction",
+            "precipitation_amount_acc",
+            "wind_direction",
+            "wind_speed"
+        ],
+        "wmo:dataPolicy": "recommended"
+    },
+    "links": [
+        {
+            "href": "https://apisixdev.eumetnet-femdi.eumetsat.ewcloud.host/no/edr/collections/meps-det-vdiv/",
+            "type": "OGCEDR",
+            "rel": "canonical",
+            "title": "OGC-API EDR"
+        },
+        {
+            "href": "https://interpol-b.met.no/api/",
+            "type": "https",
+            "rel": "related",
+            "title": "OGC API - Environmental Data Retrieval"
+        }
+    ],
+    "time": {
+        "interval": [
+            "..",
+            ".."
+        ],
+        "resolution": "PT1H"
+    }
+}

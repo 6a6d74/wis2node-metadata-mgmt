@@ -1,0 +1,119 @@
+{
+    "id": "urn:wmo:md:pl-imgw-test:surface-weather-observations",
+    "conformsTo": [
+        "http://wis.wmo.int/spec/wcmp/2/conf/core"
+    ],
+    "type": "Feature",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    14.17,
+                    48.97
+                ],
+                [
+                    14.17,
+                    55.04
+                ],
+                [
+                    24.63,
+                    55.04
+                ],
+                [
+                    24.63,
+                    48.97
+                ],
+                [
+                    14.17,
+                    48.97
+                ]
+            ]
+        ]
+    },
+    "properties": {
+        "identifier": "urn:wmo:md:pl-imgw-test:surface-weather-observations",
+        "title": "Surface weather observations from Poland",
+        "description": "Surface weather observations from Poland; served through FEMDI API Gateway",
+        "themes": [
+            {
+                "concepts": [
+                    {
+                        "id": "weather"
+                    }
+                ],
+                "scheme": "https://codes.wmo.int/topic-hierarchy/earth-system-discipline"
+            }
+        ],
+        "language": "en",
+        "type": "dataset",
+        "created": "2023-04-13T00:00:00Z",
+        "rights": "Users are granted free and unrestricted access to this data, without charge and with no conditions on use. Users are requested to attribute the producer of this data. WMO Unified Data Policy (Resolution 1 (Cg-Ext 2021))",
+        "contacts": [
+            {
+                "addresses": [
+                    {
+                        "deliveryPoint": [
+                            "Podlesna 61"
+                        ],
+                        "city": "Warsaw",
+                        "administrativeArea": "Mazowieckie",
+                        "postalCode": "01-673",
+                        "country": "Poland"
+                    }
+                ],
+                "roles": [
+                    "host"
+                ],
+                "organization": "Institute of Metoerology and Water Management (IMGW-PIB)",
+                "position": "WIS2 administrators",
+                "hoursOfService": "0800h - 1600h CEST/CET",
+                "phones": [
+                    {
+                        "value": "+48225694101"
+                    }
+                ],
+                "emails": [
+                    {
+                        "value": "wis@imgw.pl"
+                    }
+                ],
+                "links": [
+                    {
+                        "rel": "canonical",
+                        "type": "text/html",
+                        "href": "https://imgw.pl"
+                    }
+                ]
+            }
+        ],
+        "keywords": [
+            "surface weather",
+            "temperature",
+            "observations"
+        ],
+        "wmo:dataPolicy": "recommended"
+    },
+    "links": [
+        {
+            "href": "mqtt://everyone:everyone@mosquitto:1883",
+            "type": "MQTT",
+            "rel": "related",
+            "title": "notifications",
+            "channel": "origin/a/wis2/pl-imgw-test/data/core/weather/surface-weather-observations/synop"
+        },
+        {
+            "href": "https://apisixdev.eumetnet-femdi.eumetsat.ewcloud.host/pl/oapi/collections/urn:x-wmo:md:pol.poland:surface-weather-observations/",
+            "type": "OGCEDR",
+            "rel": "canonical",
+            "title": "OGC-API Features"
+        }
+    ],
+    "time": {
+        "interval": [
+            "..",
+            ".."
+        ],
+        "resolution": "PT1H"
+    }
+}
