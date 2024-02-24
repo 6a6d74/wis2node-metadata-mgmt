@@ -74,25 +74,28 @@ identification:
 distribution:
     edr:
         url: https://apisixdev.eumetnet-femdi.eumetsat.ewcloud.host/fi/edr/collections/ecmwf
-        type: HTTP
+        type: OGCEDR
         rel: canonical
         name: OGC-API EDR
         description: Global weather forecast model data (ECMWF IFS) provided via the OGC-API Environmental Data Retrieval (EDR) API
         function: download
     documentation:
         url: https://en.ilmatieteenlaitos.fi/open-data-manual
+        type: https
         rel: related
         name: Open data manual
         description: Documentation describing open data provision from FMI
         function: information
     support:
         url: https://en.ilmatieteenlaitos.fi/open-data-support-request
+        type: https
         rel: related
         name: Open data support
         description: Questions about Open Data
         function: information
     about:
         url: https://www.ecmwf.int/en/forecasts/datasets/open-data
+        type: https
         rel: related
         name: About the ECMWF Weather Forecast Model
         description: About the ECMWF Weather Forecast Model
