@@ -30,7 +30,7 @@ spatial:
 
 identification:
     title: Global weather forecast data from ECMWF IFS model
-    abstract: Global weather forecast data from ECMWF IFS model. Point forecasts and lattice fields of a weather forecast model. Weather forecast model pressure surface data as lattice field. Latest 54 h forecast 2 times / day.
+    abstract: Global weather forecast data from ECMWF IFS model. Point forecasts and lattice fields of a weather forecast model. Weather forecast model pressure surface data as lattice field. Latest 54 h forecast 2 times per day.
     rights: Users are granted free and unrestricted access to this data, without charge and with no conditions on use. Users are requested to attribute the producer of this data. WMO Unified Data Policy (Resolution 1 (Cg-Ext 2021))
     status: onGoing
     dates:
