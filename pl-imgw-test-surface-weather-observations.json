@@ -1,5 +1,5 @@
 {
-    "id": "urn:wmo:md:dk-dmi-opendata:harmonie_nea_sf",
+    "id": "urn:wmo:md:pl-imgw-test:surface-weather-observations",
     "conformsTo": [
         "http://wis.wmo.int/spec/wcmp/2/conf/core"
     ],
@@ -9,32 +9,32 @@
         "coordinates": [
             [
                 [
-                    -28.62,
-                    44.38
+                    14.17,
+                    48.97
                 ],
                 [
-                    -28.62,
-                    72.88
+                    14.17,
+                    55.04
                 ],
                 [
-                    37.01,
-                    72.88
+                    24.63,
+                    55.04
                 ],
                 [
-                    37.01,
-                    44.38
+                    24.63,
+                    48.97
                 ],
                 [
-                    -28.62,
-                    44.38
+                    14.17,
+                    48.97
                 ]
             ]
         ]
     },
     "properties": {
-        "identifier": "urn:wmo:md:dk-dmi-opendata:harmonie_nea_sf",
-        "title": "HARMONIE NEA (\"North Europe and Faroe Islands\") SF (\"surface area\") data",
-        "description": "HARMONIE weather forecast model data for North Europe and Faroe Islands. A single forecast calculated at a certain point in time is referred to as a model run and contains a given number of time steps. Parameters in land temperature, wind in several heights, sun radiation, pressure, humidity, cloud cover and much more. Data is provided on the forecast model's \"surfaces\" (e.g., soil temperature, 2 m temperature, 10 m wind). Surface data also include parameters that are integrated across laters through the entire atmosphere (e.g., precipitation and cloud cover).",
+        "identifier": "urn:wmo:md:pl-imgw-test:surface-weather-observations",
+        "title": "Surface weather observations from Poland",
+        "description": "Surface weather observations from Poland; served through FEMDI API Gateway",
         "themes": [
             {
                 "concepts": [
@@ -54,60 +54,59 @@
                 "addresses": [
                     {
                         "deliveryPoint": [
-                            "Lyngbyvej 100"
+                            "Podlesna 61"
                         ],
-                        "city": "Copenhagen",
-                        "administrativeArea": "Ryparken-Lundehus",
-                        "postalCode": "DK-2100",
-                        "country": "Denmark"
+                        "city": "Warsaw",
+                        "administrativeArea": "Mazowieckie",
+                        "postalCode": "01-673",
+                        "country": "Poland"
                     }
                 ],
                 "roles": [
                     "host"
                 ],
-                "organization": "Danish Meteorological Institute (DMI)",
+                "organization": "Institute of Metoerology and Water Management (IMGW-PIB)",
+                "position": "WIS2 administrators",
                 "hoursOfService": "0800h - 1600h CEST/CET",
                 "phones": [
                     {
-                        "value": "+4539157500"
+                        "value": "+48225694101"
+                    }
+                ],
+                "emails": [
+                    {
+                        "value": "wis@imgw.pl"
                     }
                 ],
                 "links": [
                     {
                         "rel": "canonical",
                         "type": "text/html",
-                        "href": "https://www.dmi.dk/"
+                        "href": "https://imgw.pl"
                     }
                 ]
             }
         ],
         "keywords": [
-            "forecast",
-            "pressure",
-            "cloud cover",
-            "wind",
+            "surface weather",
             "temperature",
-            "relative humidity",
-            "rain",
-            "geopotential",
-            "dew point temperature",
-            "visibility"
+            "observations"
         ],
         "wmo:dataPolicy": "recommended"
     },
     "links": [
         {
-            "href": "mqtts://username:password@host:port",
+            "href": "mqtt://everyone:everyone@mosquitto:1883",
             "type": "MQTT",
             "rel": "related",
             "title": "notifications",
-            "channel": "origin/a/wis2/dk-dmi-opendata/data/recommended/weather/prediction/forecast"
+            "channel": "origin/a/wis2/pl-imgw-test/data/core/weather/surface-weather-observations/synop"
         },
         {
-            "href": "https://apisixdev.eumetnet-femdi.eumetsat.ewcloud.host/dk/edr/collections/harmonie_nea_sf",
+            "href": "https://apisixdev.eumetnet-femdi.eumetsat.ewcloud.host/pl/oapi/collections/urn:x-wmo:md:pol.poland:surface-weather-observations/",
             "type": "OGCEDR",
             "rel": "canonical",
-            "title": "OGC-API EDR"
+            "title": "OGC-API Features"
         }
     ],
     "time": {
