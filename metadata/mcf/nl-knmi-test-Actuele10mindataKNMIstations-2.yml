@@ -59,6 +59,10 @@ identification:
         spatial:
             - bbox: [-68.5, 12, 7.4, 55.7]
               crs: 4326
+        temporal:
+            - begin: null
+              end: null
+              resolution: PT10M
     url: https://dataplatform.knmi.nl/dataset/actuele10mindataknmistations-2
     wmo_data_policy: core
     topicCategory: climatologyMeteorologyAtmosphere
@@ -70,26 +74,28 @@ identification:
 distribution:
     edr:
         url: https://apisixdev.eumetnet-femdi.eumetsat.ewcloud.host/nl/edr/v1/collections/observations
-        type: HTTP
+        type: OGCEDR
         rel: canonical
         name: OGC-API EDR
         description: 10 minute synoptical observations data access API interface
         function: download
     files:
         url: https://api.dataplatform.knmi.nl/open-data/v1/datasets/Actuele10mindataKNMIstations/versions/2/files
+        type: file
         rel: items
         name: Raw data files
         description: Raw data download (Netcdf files)
         function: download
     station-metadata:
         url: https://oscar.wmo.int/surface/rest/api/search/station/?&operatingStatus=Operational&territoryName=NLD&longitudeMin=-68.5&longitudeMax=7.4&latitudeMax=55.7&latitudeMin=12.0
-        type: HTTP
+        type: service
         rel: http://def.wmo.int/def/rel/wmdr/-/FacilitySet
         name: WMO OSCAR/Surface
         description: Observing stations associated with this dataset
         function: information
     documentation:
         url: https://developer.dataplatform.knmi.nl/edr-api#howto
+        type: https
         rel: related
         name: Documentation
         description: Howto documentation for the EDR API service
