@@ -47,7 +47,7 @@ jobs:
         cp -f /tmp/wcmp2-records/* .
         git add .
         git commit -am "update WMCP2 records"
-        git push
+        git push --force
     - name: checkout main branch again
       uses: actions/checkout@v3
       with:
