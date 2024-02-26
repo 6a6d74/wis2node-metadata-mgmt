@@ -126,6 +126,18 @@
             "type": "https",
             "rel": "related",
             "title": "Documentation"
+        },
+        {
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "rel": "license",
+            "title": "CC0 BY 4.0 Deed | Creative Commons"
+        },
+        {
+            "href": "https://developer.dataplatform.knmi.nl/open-data/citation/Actuele10mindataKNMIstations-2",
+            "type": "text/html",
+            "rel": "cite-as",
+            "title": "Koninklijk Nederlands Meteorologisch Instituut (KNMI) | Meteo data - actual synoptic observations KNMI the Netherlands per 10 minutes | Created 2023-01-01 | urn:wmo:md:nl-knmi-test:Actuele10mindataKNMIstations-2 | https://creativecommons.org/licenses/by/4.0/ | CC0 BY 4.0 Deed"
         }
     ],
     "time": {
