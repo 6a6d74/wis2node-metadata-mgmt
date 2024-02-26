@@ -72,7 +72,7 @@ distribution:
         function: download
     http:
         url: https://apisixdev.eumetnet-femdi.eumetsat.ewcloud.host/pl/oapi/collections/urn:x-wmo:md:pol.poland:surface-weather-observations/
-        type: OGCEDR
+        type: OGCFeat
         rel: canonical
         name: OGC-API Features
         description: OGC-API Features service for accessing surface weather observations in Poland
