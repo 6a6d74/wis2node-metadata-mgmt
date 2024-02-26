@@ -65,7 +65,7 @@
                 "roles": [
                     "host"
                 ],
-                "organization": "Institute of Metoerology and Water Management (IMGW-PIB)",
+                "organization": "Institute of Meteorology and Water Management (IMGW-PIB)",
                 "position": "WIS2 administrators",
                 "hoursOfService": "0800h - 1600h CEST/CET",
                 "phones": [
@@ -104,7 +104,7 @@
         },
         {
             "href": "https://apisixdev.eumetnet-femdi.eumetsat.ewcloud.host/pl/oapi/collections/urn:x-wmo:md:pol.poland:surface-weather-observations/",
-            "type": "OGCEDR",
+            "type": "OGCFeat",
             "rel": "canonical",
             "title": "OGC-API Features"
         }
