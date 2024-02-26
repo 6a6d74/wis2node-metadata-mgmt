@@ -109,6 +109,13 @@
             "title": "Raw data files"
         },
         {
+            "rel": "items",
+            "href": "mqtts://everyone:everyone@globalbroker.meteo.fr:8883",
+            "type": "application/geo+json",
+            "title": "Notifications from Météo-France Global Broker",
+            "channel": "origin/a/wis2/nl-knmi-test/data/recommended/weather/surface-based-observations/"
+        },
+        {
             "href": "https://oscar.wmo.int/surface/rest/api/search/station/?&operatingStatus=Operational&territoryName=NLD&longitudeMin=-68.5&longitudeMax=7.4&latitudeMax=55.7&latitudeMin=12.0",
             "type": "service",
             "rel": "http://def.wmo.int/def/rel/wmdr/-/FacilitySet",
