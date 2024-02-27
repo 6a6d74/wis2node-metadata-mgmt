@@ -5,3 +5,5 @@ Set _secret_ repository environment variable `PYWIS_PUBSUB_BROKER_URL` to point 
 
 Enable GitHub pages for the repository; remember to set GitHub pages to build from the gh-pages branch.
 
+[Metadata Control File (MCF) reference documentation](https://geopython.github.io/pygeometa/reference/mcf/) 
+
